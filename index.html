@@ -26,50 +26,50 @@
                     </div>
                     <div class="row mt-3">
                         <div class="display-content px-3 px-md-5">
-                            <input type="text" id="display" placeholder="0">
+                            <input type="text" id="display" placeholder="0" value="">
                         </div>
                     </div>
-                    <div class="row mt-5 mb-3 px-2 px-sm-5">
+                    <form class="row mt-5 mb-3 px-2 px-sm-5">
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" value="C">
-                                <input type="button" value="9">
-                                <input type="button" value="8">
-                                <input type="button" value="7">
+                                <input type="button" value="C" onclick="ResetFunc()">
+                                <input type="button" name="b9" value="9" onclick="AddToCalculator(b9.value)">
+                                <input type="button" name="b8" value="8" onclick="AddToCalculator(b8.value)">
+                                <input type="button" name="b7" value="7" onclick="AddToCalculator(b7.value)">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" value="+">
-                                <input type="button" value="6">
-                                <input type="button" value="5">
-                                <input type="button" value="4">
+                                <input type="button" name="bplus" value="+" onclick="AddToCalculator(bplus.value)">
+                                <input type="button" name="b6" value="6" onclick="AddToCalculator(b6.value)">
+                                <input type="button" name="b5" value="5" onclick="AddToCalculator(b5.value)">
+                                <input type="button" name="b4" value="4" onclick="AddToCalculator(b4.value)">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" value="-">
-                                <input type="button" value="3">
-                                <input type="button" value="2">
-                                <input type="button" value="1">
+                                <input type="button" name="bneg" value="-"  onclick="AddToCalculator(bneg.value)">
+                                <input type="button" name="b3" value="3" onclick="AddToCalculator(b3.value)">
+                                <input type="button" name="b2" value="2" onclick="AddToCalculator(b2.value)">
+                                <input type="button" name="b1" value="1" onclick="AddToCalculator(b1.value)">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" value="*">
-                                <input type="button" value="/">
-                                <input type="button" value="0">
-                                <input type="button" value=".">
+                                <input type="button" name="bmulb" value="*" onclick="AddToCalculator(bmulb.value)">
+                                <input type="button" name="bdiv" value="/" onclick="AddToCalculator(bdiv.value)">
+                                <input type="button" name="b0" value="0" onclick="AddToCalculator(b0.value)">
+                                <input type="button" name="bdot" value="." onclick="AddToCalculator(bdot.value)">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
                                 <input type="button" value="=">
-                                <input type="button" value="&radic;">
-                                <input type="button" value="^">
+                                <input type="button" name="sqrt" value="&radic;">
+                                <input type="button" name="pow" value="^">
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
