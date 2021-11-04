@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap%22");
+
 *{
     box-sizing: border-box;
+    font-family: "Comfortaa", cursive;
 }
 html,body{
     padding: 0;
@@ -15,8 +18,8 @@ html,body{
 .calc-border{
     border-radius: 17px;
     background: #e0e0e0;
-    box-shadow:  21px 21px 42px #bebebe,
-                 -21px -21px 42px #ffffff;
+box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
 }
 .format-checkbox label{
     font-size: 12px;
@@ -28,6 +31,10 @@ html,body{
     cursor: pointer;
 }
 .display-content #display{
+    border: none;
+    outline: unset;
+    padding: 15px;
+    font-size: 32px;
     width: 100%;
     height: 90px;
     border-radius: 28px;
@@ -35,14 +42,58 @@ html,body{
     background: #e0e0e0;
     box-shadow: inset 5px 5px 10px #cccccc,
                 inset -5px -5px 10px #f4f4f4;
-}
-.display-content #display{
-    border: none;
-    outline: unset;
-    padding: 15px;
-    font-size: 32px;
+    pointer-events: none;
+    user-select: none;
 }
 .display-content #display:focus-visible{
     outline: unset;
     border: none;
+}
+
+/* calc Buttons */
+.calc-buttons input{
+    width: 19%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+box-shadow:  6px 6px 10px #c3c3c3,
+             -6px -6px 10px #fdfdfd;
+}
+.calc-buttons input:active{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  6px 6px 10px #c3c3c3,
+                 -6px -6px 10px #fdfdfd;
+}
+.calc-buttons input:focus-visible{
+    outline: none;
+    border: none;
+}
+.calc-buttons input[value="C"]{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #f7473a, #bb280e);
+    box-shadow:  6px 6px 10px #bbbbbb,
+             -6px -6px 10px #f1fde1;
+}
+.calc-buttons input[value="C"]:active{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #bb280e, #f7473a);
+    box-shadow:  6px 6px 10px #bbbbbb,
+             -6px -6px 10px #f1fde1;
+}
+.calc-buttons input[value="="]{
+    width: 46%;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #96f52a, #78cf15);
+    box-shadow:  6px 6px 10px #bbbbbb,
+             -6px -6px 10px #f1fde1;
+}
+.calc-buttons input[value="="]:active{
+    border-radius: 10px;
+    background: linear-gradient(145deg, #64a020, #96f52a);
+    box-shadow:  6px 6px 10px #bbbbbb,
+             -6px -6px 10px #f1fde1;
 }
