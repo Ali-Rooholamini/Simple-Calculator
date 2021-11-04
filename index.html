@@ -56,17 +56,17 @@
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" name="bmulb" value="*" onclick="AddToCalculator(bmulb.value)">
-                                <input type="button" name="bdiv" value="/" onclick="AddToCalculator(bdiv.value)">
+                                <input type="button" name="bmulb" value="&times;" onclick="AddToCalculator(bmulb.value)">
+                                <input type="button" name="bdiv" value="&divide;" onclick="AddToCalculator(bdiv.value)">
                                 <input type="button" name="b0" value="0" onclick="AddToCalculator(b0.value)">
                                 <input type="button" name="bdot" value="." onclick="AddToCalculator(bdot.value)">
                             </div>
                         </div>
                         <div class="row mb-4">
                             <div class="w-100 d-flex justify-content-between px-0 px-xl-5 ms-2 calc-buttons">
-                                <input type="button" value="=">
-                                <input type="button" name="sqrt" value="&radic;">
-                                <input type="button" name="pow" value="^">
+                                <input type="button" value="=" onclick="Initialize()">
+                                <input type="button" name="sqrt" value="&radic;" onclick="MathFunc('sqrt')">
+                                <input type="button" name="pow" value="^" onclick="AddToCalculator(pow.value)">
                             </div>
                         </div>
                     </form>
