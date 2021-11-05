@@ -1,9 +1,14 @@
-"strict mode";
+"use strict";
 function AddToCalculator(value){
     if(document.getElementById("display").value === "cannot divide by zero"){
         document.getElementById("display").value = "";
     }
-    document.getElementById("display").value += value;
+    if(value == "0" && document.getElementById("display").value == "0"){
+        document.getElementById("display").value == "0";
+    }
+    else{
+        document.getElementById("display").value += value;
+    }
 }
 function ResetFunc(){
     document.getElementById("display").value = "";

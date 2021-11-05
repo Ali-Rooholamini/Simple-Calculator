@@ -99,3 +99,20 @@ box-shadow:  6px 6px 10px #c3c3c3,
     box-shadow:  6px 6px 10px #bbbbbb,
              -6px -6px 10px #f1fde1;
 }
+/* fix display font-size on mobile design */
+@media screen and (max-width: 444px){
+    .display-content #display{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 344px){
+    .display-content #display{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 300px){
+    .display-content #display{
+        font-size: 16px;
+        height: 72px;
+    }
+}
