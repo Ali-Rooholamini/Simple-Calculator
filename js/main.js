@@ -7,7 +7,12 @@ function AddToCalculator(value){
         document.getElementById("display").value == "0";
     }
     else{
-        document.getElementById("display").value += value;
+        if((value == "+" || value == "-" || value == "^" || value == "×" || value == "÷") && document.getElementById("display").value == ""){
+            document.getElementById("display").value = "";
+        }
+        else{
+            document.getElementById("display").value += value;
+        }
     }
 }
 function ResetFunc(){
@@ -30,3 +35,4 @@ function Initialize(){
 function MathFunc(MathType){
     document.getElementById("display").value = Math[MathType](document.getElementById("display").value);
 }
+console.log(document.getElementById("display").value , typeof document.getElementById("display").value)
